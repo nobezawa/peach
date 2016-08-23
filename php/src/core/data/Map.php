@@ -14,7 +14,7 @@ class Map implements MapInterface  {
     private $list;
 
     public function __construct(array $list = array()) {
-        $this->set_list($list);
+        $this->setList($list);
     }
 
     public function set($key, $data) {
@@ -31,12 +31,12 @@ class Map implements MapInterface  {
         return $this->has($key) ? $this->list[$key] : null;
     }
 
-    public function set_list(array $list) {
+    public function setList(array $list) {
         $this->list = $list;
         return $this;
     }
 
-    public function get_list() {
+    public function getList() {
         return $this->list;
     }
 

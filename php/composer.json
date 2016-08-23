@@ -2,9 +2,9 @@
   "require": {},
   "autoload": {
     "psr-4": {
-      "core\\data\\": "gnavi_libray/core/data",
-      "core\\dataTest\\": "gnavi_libray/core/dataTest",
-      "core\\io\\": "gnavi_libray/core/io"
+      "peach\\core\\data\\": "src/core/data",
+      "peach\\core\\dataTest\\": "src/core/dataTest",
+      "peach\\core\\io\\": "src/core/io"
     }
   }
 }

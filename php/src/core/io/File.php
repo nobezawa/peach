@@ -23,57 +23,57 @@ class File implements FileInterface {
         $this->set_path($path);
     }
 
-    public function set_path($path) {
+    public function setPath($path) {
         $this->path = $path;
         return $this;
     }
 
-    public function get_path() {
+    public function getPath() {
         return $this->path;
     }
 
-    public function set_data($data) {
+    public function setData($data) {
         $this->data = $data;
         return $this;
     }
 
-    public function add_data($data) {
+    public function addData($data) {
         $this->data .= $data;
         return $this;
     }
 
-    public function get_data() {
+    public function getData() {
         return $this->data;
     }
 
-    public function set_type($type) {
+    public function setType($type) {
         $this->type = $type;
         return $this;
     }
 
-    public function get_type() {
+    public function getType() {
         return $this->type;
     }
 
-    public function set_mode($mode) {
+    public function setMode($mode) {
         $this->mode = $mode;
         return $this;
     }
 
-    public function get_mode() {
+    public function getMode() {
         return $this->mode;
     }
 
-    public function set_dir_mode($mode) {
+    public function setDirMode($mode) {
         $this->dir_mode = $mode;
         return $this;
     }
 
-    public function get_dir_mode() {
+    public function getDirMode() {
         return $this->dir_mode;
     }
 
-    public function get_size() {
+    public function getSize() {
         return filesize($this->path);
     }
 

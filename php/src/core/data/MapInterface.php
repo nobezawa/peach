@@ -50,14 +50,14 @@ interface MapInterface  {
      * @param   mixed[]  $list
      * @return  self
      */
-    public function set_list(array $list);
+    public function setList(array $list);
 
     /**
      * Get list
      *
      * @return  mixed[]
      */
-    public function get_list();
+    public function getList();
 
     /**
      * Count

@@ -25,14 +25,14 @@ interface FileInterface {
      * @param   string  $path
      * @return  self
      */
-    public function set_path($path);
+    public function setPath($path);
 
     /**
      * Get path
      *
      * @return  string
      */
-    public function get_path();
+    public function getPath();
 
     /**
      * Set data
@@ -40,7 +40,7 @@ interface FileInterface {
      * @param   mixed  $data
      * @return  self
      */
-    public function set_data($data);
+    public function setData($data);
 
     /**
      * Add data
@@ -48,14 +48,14 @@ interface FileInterface {
      * @param   mixed  $data
      * @return  self
      */
-    public function add_data($data);
+    public function addData($data);
 
     /**
      * Get data
      *
      * @return  mixed
      */
-    public function get_data();
+    public function getData();
 
     /**
      * Set type
@@ -63,14 +63,14 @@ interface FileInterface {
      * @param   string  $type
      * @return  self
      */
-    public function set_type($type);
+    public function setType($type);
 
     /**
      * Get type
      *
      * @return  string
      */
-    public function get_type();
+    public function getType();
 
     /**
      * Set mode
@@ -78,14 +78,14 @@ interface FileInterface {
      * @param   integer  $mode
      * @return  self
      */
-    public function set_mode($mode);
+    public function setMode($mode);
 
     /**
      * Get mode
      *
      * @return  integer
      */
-    public function get_mode();
+    public function getMode();
 
     /**
      * Set directory mode
@@ -93,21 +93,21 @@ interface FileInterface {
      * @param   integer  $mode
      * @return  self
      */
-    public function set_dir_mode($mode);
+    public function setDirMode($mode);
 
     /**
      * Get directory mode
      *
      * @return  integer
      */
-    public function get_dir_mode();
+    public function getDirMode();
 
     /**
      * Get size
      *
      * @return  integer
      */
-    public function get_size();
+    public function getSize();
 
     /**
      * Check exist

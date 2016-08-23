@@ -6,7 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'core\\io\\' => array($baseDir . '/gnavi_libray/core/io'),
-    'core\\data\\' => array($baseDir . '/gnavi_libray/core/data'),
-    'core\\dataTest\\' => array($baseDir . '/gnavi_libray/core/dataTest'),
+    'peach\\core\\io\\' => array($baseDir . '/src/core/io'),
+    'peach\\core\\data\\' => array($baseDir . '/src/core/data'),
+    'peach\\core\\dataTest\\' => array($baseDir . '/src/core/dataTest'),
 );
