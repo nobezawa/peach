@@ -16,7 +16,7 @@ if (preg_match('/^group=(\w+)$/', $argv[1], $list)) {
     exit;
 }
 
-if (preg_match('/^file=(\w+)$/', $argv[1], $list)) {
+if (preg_match('/^file=((\w|\/|\.)+)$/', $argv[1], $list)) {
     $command .= ' '.$list[1];
     passthru($command);
     exit;

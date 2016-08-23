@@ -28,6 +28,13 @@ interface FormatInterface  {
     public function setData($data);
 
     /**
+     * Get data
+     *
+     * @return mixed
+     */
+    public function getData();
+
+    /**
      * Set Type
      *
      * @param  string $type
@@ -38,7 +45,7 @@ interface FormatInterface  {
     /**
      * to Array
      *
-     * @return array
+     * @return self
      */
     public function toArray();
 

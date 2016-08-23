@@ -26,39 +26,24 @@ implements FormatInterface {
         return self::$obj;
     }
 
-    /**
-     * Set data
-     *
-     * @param  mixed $data
-     * @return self
-     */
     public function setData($data) {
         $this->data = $data;
         return $this;
     }
 
-    /**
-     * Set type
-     *
-     * @param  string $type
-     * @return self
-     */
+    public function getData() {
+        return $this->data;
+    }
+
     public function setType($type = 'json') {
         $this->type = $type;
         return $this;
     }
 
-    /**
-     * toArray
-     *
-     * @return mixed
-     */
     public function toArray() {
         if (is_array($this->data)) return $this->data;
-        $tmp = array();
-        if ($this->type == 'json') {
-
-        }
+        $this->data = (array) $this->data;
+        return $this;
     }
 
     public function toJson() {
@@ -68,13 +53,7 @@ implements FormatInterface {
         return '';
     }
 
-    /**
-     * To Xml
-     *
-     * @return string
-     */
-    public function toXml()
-    {
+    public function toXml() {
         // TODO: Implement toXml() method.
     }
 }
